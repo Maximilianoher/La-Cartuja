@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{font-size: 0.70em}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid tgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px tgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(203, 162, 12);
+
+
+} 
+
+button:hover{
+    background-color: rgb(143, 114, 9);
+} 
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+} 
+
+.color-salame{
+    color: rgb(16, 16, 98);
+    
+}
+
+.color-acento{
+    color: orange;
+} 
+
+
+header{
+    background-color:rgb(245,245,245) ;
+} 
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgba(187, 158, 10, 0.793);
+    font-size:1.6em;
+} 
+
+header .container{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+} 
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+} 
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+} 
+
+header a:hover{
+    color: orange;
+}
+
+#hero{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center; 
+   flex-direction: column;
+   height: 90vh;
+   background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+   )
+   ,url("imagenes/la-cartu.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75;
+}
+
+
+#somos-la-cartuja .container{
+    text-align: center;
+    padding: 100px 12px;
+
+}
+
+
+#nuestros-programas { 
+    background-color: rgba(30,30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 100px 0px;
+
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2en;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 15px;
+
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+       )
+       ,url("imagenes/pan.jpg");
+}
+
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+       )
+       ,url("imagenes/sand.jpg");
+}
+
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+       )
+       ,url("imagenes/empleados-cartuja.jpg");
+    
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bolder;
+    padding: 20px;
+    font-size: 20px;
+    
+}
+
+#llama-ya{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    flex-direction: column;
+    height: 90vh;
+    background-color: rgb(27, 1, 1);
+    color: white;
+    height: 80vh;
+}
+
+#llama-ya h2{
+    font-size: 9vw;
+}
+
+
+#llama-ya button{
+
+    font-size: 5vw;
+}
+
+
+footer{
+    background-color:rgb(230, 230, 230) ;
+}
+
+
+footer p{
+   margin: 0; 
+   padding: 12px;
+   color: rgb(100, 100, 100);
+}
+
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    
+    }
+
+
+    #somos-la-cartuja .container {
+        display: flex;
+
+    }
+    #somos-la-cartuja .texto{
+        width: 50%;
+        max-width: 400px;
+        text-align: initial;;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-la-cartuja h2{
+        margin-top: 0px;
+    }
+
+
+    #somos-la-cartuja .img-container{
+        background-image:url("imagenes/pan.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400%;
+    }
+
+    #nuestros-programas .programas{ 
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #nuestros-programas p{ 
+        display: block;
+        margin-bottom: 30px;
+        
+     }
+
+     #nuestros-programas h3{ 
+        margin-top: 0;
+      }
+
+     #nuestros-programas .carta{ 
+        padding: 15px;
+     }
+
+     #caracteristicas{ 
+        background-image:url("imagenes/la-cartu.jpg");
+        background-repeat: no-repeat;
+        background-size: 620px 520px;
+        background-color: black;
+
+      }
+
+
+      #caracteristicas .container { 
+        text-align: initial;
+        color: rgb(255, 255, 255);
+    }
+
+    #caracteristicas ul{
+        margin-left: 600px;
+        
+        
+        
+    }
+
+    #llama-ya h2{
+        font-size: 5em;
+
+    }
+
+    #llama-ya button{
+        font-size: 4em
+    }
+    
+    footer .container{
+        align-items: flex-end;
+    }
+}
